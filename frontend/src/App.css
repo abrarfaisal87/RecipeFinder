@@ -1,0 +1,10 @@
+#root {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding-top: 5em;
+    padding-bottom: 5em;
+    height: 100vh;
+    background-color: rgb(227, 227, 227);
+}
