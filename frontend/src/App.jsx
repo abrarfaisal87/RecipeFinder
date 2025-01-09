@@ -116,7 +116,8 @@ const App = ()=>{
      </div>
 
         
-        <button className="view-more-button text-lg p-4 bg-indigo-400 rounded-xl m-auto" onClick={handleViewMore}>view more</button>
+        <button className="text-lg p-2 text-white bg-gray-600 
+        hover:bg-white hover:text-gray-600 transition-all duration-200 rounded-md m-auto" onClick={handleViewMore}>view more</button>
     </>)}
 
 

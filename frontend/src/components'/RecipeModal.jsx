@@ -26,7 +26,7 @@ const RecipeModal = ({recipeId,onClose}) => {
     <div className="modal fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 shadow-md">
         <div className="model-content mx-auto bg-white p-4 rounded max-w-lg">
             <div className="modal-header flex flex-row items-center justify-between ">
-                <h2>{recipeSummary.title}</h2>
+                <h2 className='text-3xl font-bold mb-2'>{recipeSummary.title}</h2>
                 <span className='close-btn' onClick={onClose}>
                     &times;
                 </span>

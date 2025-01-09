@@ -2,11 +2,11 @@ import dotenv from 'dotenv';
 dotenv.config();
 import express from "express"
 import cors from "cors"
-import * as RecipeAPI from './recipeApi.js';
+import * as RecipeAPI from './src/recipeApi.js';
 import {PrismaClient}  from '@prisma/client';
 
 
-const port=5000;
+const port=process.env.PORT || 5000;
 const app = express();
 const prismaClient = new PrismaClient();
 
@@ -84,7 +84,7 @@ app.delete('/api/recipes/favourite',async(req,res)=>{
 
 app.listen(port,()=>{
     console.log(`server running on ${port}`)
-    console.log("API_KEY:", process.env.API_KEY);
+    //console.log("API_KEY:", process.env.API_KEY);
 })
 
 

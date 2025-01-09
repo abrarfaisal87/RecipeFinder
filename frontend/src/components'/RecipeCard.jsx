@@ -4,8 +4,8 @@ import {AiFillAlert, AiFillHeart, AiOutlineHeart} from 'react-icons/ai';
 const RecipeCard = ({recipe,onClick,onFavouriteButtonClick,isFavourite}) => {
   return (
     <div className='recipe-card flex flex-col
-     bg-white content-evenly p-4 shadow-2xl 
-     cursor-pointer relative gap-4' onClick={onClick}>
+     bg-white content-evenly p-4 shadow-2xl hover:bg-slate-300 transition-all duration-200
+     cursor-pointer relative gap-4 rounded-md' onClick={onClick}>
 
         <img src={recipe.image}/>
         <div className="recipe-card-title flex items-center gap-2">
