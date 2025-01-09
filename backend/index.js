@@ -13,7 +13,9 @@ const prismaClient = new PrismaClient();
 app.use(express.json());
 app.use(cors());
 
-
+app.get("/",(req,res)=>{
+    res.send('server is running');
+})
 app.get("/api/recipes/search",async (req,res)=>{
     const searchTerm = req.query.searchTerm;
     const page = parseInt(req.query.page);
