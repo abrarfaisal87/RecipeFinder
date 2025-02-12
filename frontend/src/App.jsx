@@ -91,10 +91,10 @@ const App = ()=>{
 
     {selectedTab === "search" && (<>
 
-      <form className="flex items-center rounded-md bg-white" onSubmit={(event)=>handleSearchSubmit(event)}>
-        <input className="p-1 text-sm flex-1 rounded-none border-0 focus:outline-none" required type="text" placeholder="search recipes" value={searchTerm}
+      <form className="flex items-center rounded-lg bg-white" onSubmit={(event)=>handleSearchSubmit(event)}>
+        <input className="p-2 text-sm flex-1 rounded-lg border-0 focus:outline-none" required type="text" placeholder="search recipes" value={searchTerm}
         onChange={(e)=> setSearchTerm(e.target.value)}/>
-        <button className="cursor-pointer rounded-none text-xl bg-white"><AiOutlineSearch size={35}/></button>
+        <button className="cursor-pointer p-1 rounded-lg text-xl bg-white hover:bg-slate-200"><AiOutlineSearch size={35}/></button>
       </form>
      
 

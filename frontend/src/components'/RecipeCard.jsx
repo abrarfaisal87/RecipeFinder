@@ -14,7 +14,7 @@ const RecipeCard = ({recipe,onClick,onFavouriteButtonClick,isFavourite}) => {
             onFavouriteButtonClick(recipe)
           }}>
             {isFavourite ? 
-            (<AiFillHeart size={25} color="red"/>) : (<AiOutlineHeart size={25}/>)}
+            (<AiFillHeart size={25} color="red"/>) : (<AiOutlineHeart className='hover:text-red-700 rounded-full' size={25}/>)}
             
           </span>
             <h3 className='text-sm m-0 whitespace-nowrap overflow-hidden text-ellipsis'>{recipe.title}</h3>
