@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from "react"
 import './App.css'
 import { useState } from "react";
 import * as api from './api';
-import RecipeCard from "./components/RecipeCard";
-import RecipeModal from "./components/RecipeModal";
+import RecipeCard from "./components/RecipeCard.jsx";
+import RecipeModal from "./components/RecipeModal.jsx";
 import { AiOutlineSearch } from "react-icons/ai";
 
 
